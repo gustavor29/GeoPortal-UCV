@@ -1,0 +1,78 @@
+.leaflet-control-group {
+    background-color: white;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.3);
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    position: relative;
+}
+
+.leaflet-control-group .controls {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+}
+
+.leaflet-control-group.expanded .controls {
+    display: flex;
+}
+
+.leaflet-control-load-raster,
+.leaflet-control-load-geojson-shapefile {
+    background-color: white;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.3);
+    margin-top: 5px;
+}
+
+.leaflet-control-load-raster input[type=file],
+.leaflet-control-load-geojson-shapefile input[type=file] {
+    display: none;
+}
+
+.leaflet-control-load-raster label,
+.leaflet-control-load-geojson-shapefile label {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.leaflet-control-load-raster i,
+.leaflet-control-load-geojson-shapefile i {
+    margin-right: 5px;
+}
+
+/* Tooltip styles */
+.leaflet-control-group .tooltip {
+    display: none;
+    position: absolute;
+    top: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 5px;
+    border-radius: 3px;
+    font-size: 12px;
+    white-space: nowrap;
+}
+
+.leaflet-control-group:hover .tooltip {
+    display: block;
+}
+
+/* .leaflet-top.leaflet-right {
+    top: 75px;
+} */
+
+.leaflet-control-group img {
+    width: 100%;
+    height: 100%;
+}

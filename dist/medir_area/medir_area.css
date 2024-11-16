@@ -1,0 +1,20 @@
+/* Estilos comunes para los controles personalizados */
+.leaflet-bar .leaflet-control .leaflet-control-medicion {
+    width: 25px;
+    height: 25px;
+    background-color: white;
+    border: 1px solid #ccc; /* Borde gris tenue */
+    box-sizing: content-box;
+}
+
+/* Ajuste para que los controles estén pegados entre sí */
+.leaflet-bar .leaflet-control-custom + .leaflet-control-custom,
+.leaflet-bar .leaflet-control-medicion + .leaflet-control-medicion {
+    border-top: none; /* Elimina el borde superior para íconos consecutivos */
+}
+
+/* Ajuste de los iconos para llenar completamente el contenedor */
+.medir-icon{
+    width: 100%;
+    height: 100%;
+}

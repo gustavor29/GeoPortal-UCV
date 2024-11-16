@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    
+    <!--                    Distance Measurement  -->
+    <link rel="stylesheet" href="./dist/LinearMeasurement/src/main.css" />
+	<link rel="stylesheet" href="./dist/LinearMeasurement/src/Leaflet.LinearMeasurement.css" />
+<!--                             Upload vector files -->
+    <link rel="stylesheet" href="./dist/BetterFileLayer/src/leaflet.betterfilelayer.css" />
+
+<!--                             Load Raster File and Vector Files   -->
+<link rel="stylesheet" href="./dist/GroupAddLayers/GroupAddLayers.css"/>
+    <!--                    Polygon Measurement  -->
+	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+    <!-- <link rel="stylesheet" href="https://unpkg.com/leaflet-draw@1.0.4/dist/leaflet.draw.css" /> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.draw/1.0.4/leaflet.draw.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.pm/2.2.0/leaflet.pm.css" />
+ 
+         <!--Proveedores de mapas-->
+    <!-- <script src="https://unpkg.com/leaflet@latest/dist/leaflet.js"></script>  -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.draw/1.0.4/leaflet.draw.js"></script>
+    <!-- 2 Lineas para cargar geojson grandes -->
+    <script src="https://unpkg.com/geojson-vt@3.2.0/geojson-vt.js"></script>
+    <script src="dist/leaflet-geojson-vt/leaflet-geojson-vt.js"></script>
+    <script src="./dist/EscalaNumerica/EscalaNumerica.js"></script>
+    <script src="https://unpkg.com/shapefile@0.6.0"></script>
+    <!--         Libraries used for Geojson exporting       -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-editable/1.3.0/Leaflet.Editable.min.js"></script>
+    <!-- <script src="https://npmcdn.com/leaflet-editable@1.2.0/src/Leaflet.Editable.js" ></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/@turf/turf@7/turf.min.js"></script>
+    <script src="./dist/exportar_geojson/exportar_geojson.js"></script>
+    <script src="./dist/GroupAddLayers/GroupAddLayers.js"></script> 
+ 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.pm/2.2.0/leaflet.pm.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@turf/turf@6/turf.min.js"></script>
+
+    <!-- <script src="https://unpkg.com/leaflet.shapefile@1.2.0/leaflet.shpfile.js"></script> -->
+    <script src="https://unpkg.com/shapefile@0.6.6/dist/shapefile.min.js"></script>
+
+    <title>GeoVisor UCV (V1.0)</title>
+</head>
+<body>
+    <!-- Header con los colores y logos -->
+    <header class="header">
+        <div class="header-top">
+            <img src="images/logo_ucv_b&n.png" alt="Logo UCV" class="header-logo-left">
+            <span class="header-text-top">Universidad Central de Venezuela</span>
+            <img src="images/logo_labgeomucv1.jpeg" alt="Logo Laboratorio de Geomática" class="header-logo-right">
+        </div>
+        <div class="header-bottom">
+            <span class="header-text-bottom">Laboratorio de Geomática</span>
+        </div>
+    </header>
+    
+    <!-- <div class="top-bar">
+        <div class="logo">
+            <img src="./images/logo_ucv.png" alt="Logo"> 
+            <div class="title">GeoVisor del Laboratorio de Geomática</div>
+        </div> -->
+    </div>
+    <div id="MapArea">
+        <script type="text/javascript" src="./dist/LinearMeasurement/src/Leaflet.LinearMeasurement.js"></script>
+		<script src="./dist/LinearMeasurement/src/main.js" ></script>
+        <!-- Capas vectoriales aquí -->
+        <script src="./data/GeoJson/Unidades_geologicas_noUnmapped.geojson.js" ></script>
+        <script src="./data/GeoJson/Fallas_Lineas_wgs84.geojson.js" ></script>
+        <script src="./data/GeoJson/Indice_Creole_10K.geojson.js" ></script>
+        <script src="./data/GeoJson/Indice_Creole_50K.geojson.js" ></script>
+        <script src="./data/GeoJson/Limite_Estado.geojson.js" ></script>
+        <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.js" integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
+    </div>
+    
+    <!-- Script para el control de exportación de capas vectoriales en GeoJson conrenidas en un polígono -->
+	<script src="dist/medir_area/medir_area.js"></script>
+    <script src="dist/exportar_geojson/exportar_geojson.js"></script>
+   
+    <script src="index.js"></script> 
+    <!-- <script src="app.js"></script>-->
+    <script src="./dist/leaflet.legend.js"></script> 
+    
+</body>
+</html>
