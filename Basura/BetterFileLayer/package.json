@@ -1,0 +1,71 @@
+{
+  "name": "leaflet-better-filelayer",
+  "version": "0.1.1",
+  "description": "Load spatialized files into leaflet using the HTML FileReader API",
+  "files": [
+    "dist"
+  ],
+  "main": "dist/leaflet.betterfilelayer.min.js",
+  "scripts": {
+    "dev": "webpack --config=webpack.dev.config.js",
+    "test": "jest",
+    "build": "webpack --config=webpack.config.js",
+    "lint": "eslint src/leaflet.betterfilelayer.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gabriel-russo/Leaflet.BetterFileLayer.git"
+  },
+  "keywords": [
+    "leaflet",
+    "leaflet file",
+    "formats",
+    "kml",
+    "csv",
+    "gpx",
+    "geojson",
+    "kml",
+    "leaflet",
+    "maps",
+    "gpx",
+    "wkt",
+    "osm",
+    "polyline",
+    "topojson",
+    "format",
+    "converter"
+  ],
+  "author": "Gabriel Russo",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/gabriel-russo/Leaflet.BetterFileLayer/issues"
+  },
+  "homepage": "https://github.com/gabriel-russo/Leaflet.BetterFileLayer",
+  "dependencies": {
+    "@mapbox/polyline": "^0.2.0",
+    "@mapbox/togeojson": "^0.16.0",
+    "brfs": "^2.0.2",
+    "buffer": "^6.0.3",
+    "csv2geojson": "^5.1.2",
+    "jszip": "^3.10.1",
+    "leaflet": "^1.9.4",
+    "shpjs": "^4.0.4",
+    "topojson-client": "^3.1.0",
+    "wellknown": "^0.5.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.22.11",
+    "@babel/preset-env": "^7.22.14",
+    "@jest/globals": "^29.6.4",
+    "babel-jest": "^29.6.4",
+    "css-loader": "^6.8.1",
+    "eslint": "^8.48.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-plugin-import": "^2.28.1",
+    "jest": "^29.6.4",
+    "jest-environment-jsdom": "^29.6.4",
+    "mini-css-extract-plugin": "^2.7.6",
+    "webpack": "^5.88.2",
+    "webpack-cli": "^5.1.4"
+  }
+}
