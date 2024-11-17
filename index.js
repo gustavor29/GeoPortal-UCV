@@ -48,10 +48,10 @@ var overlayMaps = {
   "Fallas": fallas, 
   "Índice Creole 50.000": creole_50k,
   "Índice Creole 10.000": creole_10k, 
-  "Unidades Geológicas 1": unidGeologicas
-###   "Unidades Geológicas 2": unidGeologicas2,
-  "Unidades Geológicas 3": unidGeologicas3,
-  "Unidades Geológicas 4 ": unidGeologicas4 ###
+  "Unidades Geológicas": unidGeologicas
+//   "Unidades Geológicas 2": unidGeologicas2,
+//  "Unidades Geológicas 3": unidGeologicas3,
+//  "Unidades Geológicas 4 ": unidGeologicas4 
 };
 
 var layerControl = L.control.layers(baseMaps, overlayMaps).addTo(map);
