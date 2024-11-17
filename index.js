@@ -1,4 +1,4 @@
-var creole_50k;
+//var creole_50k;
 
 var Stadia_AlidadeSatellite = L.tileLayer('https://tiles.stadiamaps.com/tiles/alidade_satellite/{z}/{x}/{y}{r}.{ext}', {
 	minZoom: 0,
