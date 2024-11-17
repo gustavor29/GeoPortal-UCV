@@ -421,7 +421,11 @@ var fallas_lineas = {
 ]
 }
 var fallas = L.geoJSON(fallas_lineas, {
+  style: {
+    color: "red"}
+  },
+    {
   geometryToLayer: function (feature, latlng) {
-      return L.polyline(latlng, {fillcolor: "red"});
+      return L.polyline(latlng, {"color": "#FF0000"});
 } 
 })

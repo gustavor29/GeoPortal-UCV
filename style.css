@@ -45,7 +45,7 @@ body, html {
 }
 
 .header-text-bottom {
-    font-size: 32px;
+    font-size: 22px;
     color: white;
     font-weight: bold;
 }
@@ -53,17 +53,17 @@ body, html {
 .header-logo-left, .header-logo-right {
     position: absolute;
     width: auto;
-    height: 70px;
+    height: 100px;
     top: -10px; /* Coloca los logos sobre ambas franjas */
 }
 
 .header-logo-left {
-	top: 10px;
+	top: 3px;
     left: 10px;
 }
 
 .header-logo-right {
-	top: 10px;
+	top: 3px;
     right: 10px;
 }
   /* Estilos generales para los controles personalizados en Leaflet */

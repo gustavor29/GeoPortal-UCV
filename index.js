@@ -46,8 +46,8 @@ var baseMaps = {
 var overlayMaps = {
   "Limite de Estados": limEstados,
   "Fallas": fallas, 
-  "Índice Creole 50.000": creole_50k,
-  "Índice Creole 10.000": creole_10k, 
+  "Índice Creole 1:50.000": creole_50k,
+  "Índice Creole 1:100.000": creole_10k, 
   "Unidades Geológicas": unidGeologicas
 //   "Unidades Geológicas 2": unidGeologicas2,
 //  "Unidades Geológicas 3": unidGeologicas3,
