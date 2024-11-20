@@ -67,6 +67,7 @@ var ruler = new Ruler({
 
 L.control.medirArea({ position: 'topleft' }).addTo(map);
 L.control.exportarGeoJson({ position: 'topleft' }).addTo(map);
+//unidG_Guyana.addTo(map);
 
 //var groupContainerM; // Variable global para el contenedor del grupo de Mediciones
 
