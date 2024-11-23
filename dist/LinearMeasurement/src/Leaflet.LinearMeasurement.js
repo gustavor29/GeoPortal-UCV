@@ -107,7 +107,7 @@
           }
 
           this.clickEventFn = function(e){
-            console.log(e)
+            //console.log(e)
             if(me.clickHandle){
               clearTimeout(me.clickHandle);
               me.clickHandle = 0;

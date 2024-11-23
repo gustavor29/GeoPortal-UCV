@@ -428,4 +428,5 @@ var fallas = L.geoJSON(fallas_lineas, {
   geometryToLayer: function (feature, latlng) {
       return L.polyline(latlng, {"color": "#FF0000"});
 } 
-})
+}).bindPopup(function (layer) {
+  return layer.feature.properties.Sen_movi})
